@@ -1,0 +1,10 @@
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Domain\bin\Debug\netcoreapp3.1\PetGram.Domain.deps.json
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Domain\bin\Debug\netcoreapp3.1\PetGram.Domain.dll
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Domain\bin\Debug\netcoreapp3.1\PetGram.Domain.pdb
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.csproj.AssemblyReference.cache
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.AssemblyInfoInputs.cache
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.AssemblyInfo.cs
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.csproj.CoreCompileInputs.cache
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.dll
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.pdb

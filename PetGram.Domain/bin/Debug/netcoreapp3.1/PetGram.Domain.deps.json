@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "PetGram.Domain/1.0.0": {
+        "runtime": {
+          "PetGram.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PetGram.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

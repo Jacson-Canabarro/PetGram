@@ -1,0 +1,16 @@
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Infra\bin\Debug\netcoreapp3.1\PetGram.Infra.deps.json
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Infra\bin\Debug\netcoreapp3.1\PetGram.Infra.dll
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Infra\bin\Debug\netcoreapp3.1\PetGram.Infra.pdb
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Infra\bin\Debug\netcoreapp3.1\PetGram.Domain.dll
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Infra\bin\Debug\netcoreapp3.1\PetGram.Domain.pdb
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Infra\obj\Debug\netcoreapp3.1\PetGram.Infra.csproj.AssemblyReference.cache
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Infra\obj\Debug\netcoreapp3.1\PetGram.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Infra\obj\Debug\netcoreapp3.1\PetGram.Infra.AssemblyInfoInputs.cache
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Infra\obj\Debug\netcoreapp3.1\PetGram.Infra.AssemblyInfo.cs
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Infra\obj\Debug\netcoreapp3.1\PetGram.Infra.csproj.CoreCompileInputs.cache
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Infra\obj\Debug\netcoreapp3.1\PetGram.Infra.csproj.CopyComplete
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Infra\obj\Debug\netcoreapp3.1\PetGram.Infra.dll
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Infra\obj\Debug\netcoreapp3.1\PetGram.Infra.pdb
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Infra\bin\Debug\netcoreapp3.1\PetGram.Infra.runtimeconfig.json
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Infra\bin\Debug\netcoreapp3.1\PetGram.Infra.runtimeconfig.dev.json
+C:\Users\JacsonCanabarro\pb\petgram\PetGram.Infra\obj\Debug\netcoreapp3.1\PetGram.Infra.genruntimeconfig.cache
