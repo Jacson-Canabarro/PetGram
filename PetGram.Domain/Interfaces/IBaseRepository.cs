@@ -1,17 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 using System.Threading.Tasks;
 
-namespace PetGram.Infra.Interfaces
+namespace PetGram.Domain.Interfaces
 {
-   public interface IBaseService<T> where T : class
+    public interface IBaseRepository<T> where T : class
     {
-
         Task<T> Get(Guid id);
-        List<T> GetAll();
+        IQueryable<T> GetAll();
         void Save(T entity);
         void Update(T entity);
         void Delete(T id);
+
+
     }
 }

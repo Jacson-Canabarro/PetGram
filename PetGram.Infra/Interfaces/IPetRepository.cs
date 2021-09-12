@@ -1,9 +1,7 @@
 ﻿using PetGram.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using PetGram.Infra.Repositories;
 
-namespace PetGram.Infra.Repositories
+namespace PetGram.Infra.Interfaces
 {
     public interface IPetRepository: IBaseRepository<Pet>
     {

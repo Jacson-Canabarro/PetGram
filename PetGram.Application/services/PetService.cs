@@ -1,22 +1,21 @@
 ﻿using PetGram.Domain.Entities;
-using PetGram.Infra.Interfaces;
-using PetGram.Infra.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using PetGram.Domain.Interfaces.Services;
+using PetGram.Infra.Repositories;
 
 namespace PetGram.Application.services
 {
-    public class PetService : IBaseService<Pet>
+    public class PetService : IPetService
     {
 
         private readonly PetRepository _ptr;
 
-        public PetService(PetRepository PetRepository)
+        public PetService(PetRepository petRepository)
         {
-            _ptr = PetRepository;
+            _ptr = petRepository;
 
         }
 

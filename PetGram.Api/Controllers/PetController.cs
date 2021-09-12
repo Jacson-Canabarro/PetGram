@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PetGram.Application.services;
 using PetGram.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -7,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using PetGram.Api.models;
 using PetGram.Api.Token;
+using PetGram.Application.services;
 
 namespace PetGram.Api.Controllers
 {
@@ -17,9 +17,9 @@ namespace PetGram.Api.Controllers
 
         private readonly PetService _service;
 
-        public PetController(PetService PetService)
+        public PetController(PetService petService)
         {
-            _service = PetService;
+            _service = petService;
         }
 
         [HttpGet]

@@ -1,10 +1,8 @@
-﻿using PetGram.Domain.Entities;
-using PetGram.Infra.Context;
+﻿using PetGram.Infra.Context;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
+using PetGram.Domain.Interfaces;
 
 namespace PetGram.Infra.Repositories
 {
@@ -13,7 +11,7 @@ namespace PetGram.Infra.Repositories
 
         private readonly PetGramContext _ctx;
 
-        public BaseRepository(PetGramContext ctx)
+        protected BaseRepository(PetGramContext ctx)
         {
             _ctx = ctx;
 
@@ -21,6 +19,7 @@ namespace PetGram.Infra.Repositories
         public void  Delete(T entity)
         {
            _ctx.Set<T>().Remove(entity);
+           _ctx.SaveChanges();
         }
 
         public async Task<T> Get(Guid id)
@@ -38,11 +37,13 @@ namespace PetGram.Infra.Repositories
         public void Save(T entity)
         {
             _ctx.Set<T>().AddAsync(entity);
+            _ctx.SaveChanges();
         }
 
         public void Update(T entity)
         {
             _ctx.Set<T>().Update(entity);
+            _ctx.SaveChanges();
         }
     }
 }

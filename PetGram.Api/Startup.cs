@@ -6,7 +6,12 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
+using PetGram.Application.services;
+using PetGram.Domain.Entities;
+using PetGram.Domain.Interfaces;
+using PetGram.Domain.Interfaces.Services;
 using PetGram.Infra.Context;
+using PetGram.Infra.Repositories;
 
 namespace PetGram.Api
 {
@@ -26,6 +31,8 @@ namespace PetGram.Api
             services.AddControllers();
             services.AddDbContext<PetGramContext>();
             services.AddScoped<PetGramContext, PetGramContext>();
+            services.AddScoped<PetService, PetService>();
+            services.AddScoped<PetRepository, PetRepository>();
 
             var key = Encoding.ASCII.GetBytes(Settings.Secret);
             services.AddAuthentication(x =>

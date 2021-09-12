@@ -4,4 +4,17 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Interfaces\Repositories\IPetRepository.cs" />
+    <Compile Remove="Interfaces\Repositories\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Interfaces\Repositories\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Interfaces\Repositories\**" />
+  </ItemGroup>
+
 </Project>

@@ -12,8 +12,7 @@ namespace PetGram.Domain.Entities
 
         [Key]
         public Guid Id { get; set; }
-
-        [Column("nome")]
+        
         public string Name { get; set; }
 
         public string Email { get; set; }
