@@ -15,17 +15,25 @@ namespace PetGram.Infra.Context
         {
             configuration = config;
         }
-
-   
-
+        
+        public virtual DbSet<Post> Posts { get; set; }
 
         public virtual DbSet<Pet> Pets { get; set; }
+
+        public virtual DbSet<Comment> Comments { get; set; }
+
+        public virtual DbSet<Profile> Profiles { get; set; }
+
+        public virtual DbSet<Photo> Photos { get; set; }
+
+        public virtual DbSet<Address> Addresses { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
                 => options.UseSqlServer(configuration.GetConnectionString("DbConn"));
 
 
-
-
+        protected override void OnModelCreating(ModelBuilder modelBuilder) {
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

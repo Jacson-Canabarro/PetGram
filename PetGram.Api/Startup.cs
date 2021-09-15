@@ -12,6 +12,7 @@ using PetGram.Domain.Interfaces;
 using PetGram.Domain.Interfaces.Services;
 using PetGram.Infra.Context;
 using PetGram.Infra.Repositories;
+using System;
 
 namespace PetGram.Api
 {
@@ -33,6 +34,8 @@ namespace PetGram.Api
             services.AddScoped<PetGramContext, PetGramContext>();
             services.AddScoped<PetService, PetService>();
             services.AddScoped<PetRepository, PetRepository>();
+            services.AddScoped<PostService, PostService>();
+            services.AddScoped<PostRepository, PostRepository>();
 
             var key = Encoding.ASCII.GetBytes(Settings.Secret);
             services.AddAuthentication(x =>
@@ -75,6 +78,8 @@ namespace PetGram.Api
             {
                 endpoints.MapControllers();
             });
+
+            
         }
     }
 }

@@ -5771,19 +5771,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JacsonCanabarro\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Application\\PetGram.Application.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Application\\PetGram.Application.csproj",
       "projectName": "PetGram.Application",
-      "projectPath": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Application\\PetGram.Application.csproj",
-      "packagesPath": "C:\\Users\\JacsonCanabarro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Application\\obj\\",
+      "projectPath": "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Application\\PetGram.Application.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\JacsonCanabarro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5797,8 +5797,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Infra\\PetGram.Infra.csproj": {
-              "projectPath": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Infra\\PetGram.Infra.csproj"
+            "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Infra\\PetGram.Infra.csproj": {
+              "projectPath": "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Infra\\PetGram.Infra.csproj"
             }
           }
         }
@@ -5827,7 +5827,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
