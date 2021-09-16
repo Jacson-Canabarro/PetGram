@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Application\\PetGram.Application.csproj": {}
+    "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Application\\PetGram.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Application\\PetGram.Application.csproj": {
+    "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Application\\PetGram.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Application\\PetGram.Application.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Application\\PetGram.Application.csproj",
         "projectName": "PetGram.Application",
-        "projectPath": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Application\\PetGram.Application.csproj",
-        "packagesPath": "C:\\Users\\JacsonCanabarro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Application\\obj\\",
+        "projectPath": "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Application\\PetGram.Application.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\JacsonCanabarro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Infra\\PetGram.Infra.csproj": {
-                "projectPath": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Infra\\PetGram.Infra.csproj"
+              "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Infra\\PetGram.Infra.csproj": {
+                "projectPath": "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Infra\\PetGram.Infra.csproj"
               }
             }
           }
@@ -58,21 +58,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Domain\\PetGram.Domain.csproj": {
+    "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Domain\\PetGram.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Domain\\PetGram.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Domain\\PetGram.Domain.csproj",
         "projectName": "PetGram.Domain",
-        "projectPath": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Domain\\PetGram.Domain.csproj",
-        "packagesPath": "C:\\Users\\JacsonCanabarro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Domain\\obj\\",
+        "projectPath": "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Domain\\PetGram.Domain.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\JacsonCanabarro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -112,21 +112,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Infra\\PetGram.Infra.csproj": {
+    "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Infra\\PetGram.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Infra\\PetGram.Infra.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Infra\\PetGram.Infra.csproj",
         "projectName": "PetGram.Infra",
-        "projectPath": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Infra\\PetGram.Infra.csproj",
-        "packagesPath": "C:\\Users\\JacsonCanabarro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Infra\\obj\\",
+        "projectPath": "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Infra\\PetGram.Infra.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\JacsonCanabarro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -140,8 +140,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Domain\\PetGram.Domain.csproj": {
-                "projectPath": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Domain\\PetGram.Domain.csproj"
+              "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Domain\\PetGram.Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\source\\repos\\PetgramReal\\PetGram\\PetGram.Domain\\PetGram.Domain.csproj"
               }
             }
           }
@@ -196,7 +196,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

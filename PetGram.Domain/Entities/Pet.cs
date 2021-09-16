@@ -9,7 +9,7 @@ namespace PetGram.Domain.Entities
     [Table("Pet")]
     public class Pet
     {
-//
+
         [Key]
         public Guid Id { get; set; }
         

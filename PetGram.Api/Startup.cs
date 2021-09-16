@@ -36,6 +36,8 @@ namespace PetGram.Api
             services.AddScoped<PetRepository, PetRepository>();
             services.AddScoped<PostService, PostService>();
             services.AddScoped<PostRepository, PostRepository>();
+            services.AddScoped<CommentService, CommentService>();
+            services.AddScoped<CommentRepository, CommentRepository>();
 
             var key = Encoding.ASCII.GetBytes(Settings.Secret);
             services.AddAuthentication(x =>

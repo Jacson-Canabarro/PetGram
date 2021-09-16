@@ -4,7 +4,7 @@ using System.Text;
 using PetGram.Domain.Entities;
 
 namespace PetGram.Domain.Interfaces.Services {
-    interface ICommentService : IBaseService<Comment>{
+    public interface ICommentService : IBaseService<Comment>{
 
     }
 }
