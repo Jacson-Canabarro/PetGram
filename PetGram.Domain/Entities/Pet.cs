@@ -25,5 +25,13 @@ namespace PetGram.Domain.Entities
 
         public string Password { get; set; }
 
+        public Guid ProfileId;
+        
+        public Profile Profile;
+
+        public Address Address;
+
+        public ICollection<Post> Posts;
+
     }
 }

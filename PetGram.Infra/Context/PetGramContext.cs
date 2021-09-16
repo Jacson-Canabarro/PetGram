@@ -4,6 +4,7 @@ using PetGram.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using PetGram.Infra.Configurations;
 
 namespace PetGram.Infra.Context
 {
@@ -33,7 +34,9 @@ namespace PetGram.Infra.Context
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfiguration(new ProfileConfiguration());
+            modelBuilder.ApplyConfiguration(new AddressConfiguration());
+            modelBuilder.ApplyConfiguration(new CommentConfiguration());
         }
     }
 }

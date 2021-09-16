@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 
 namespace PetGram.Domain.Entities {
@@ -11,5 +9,9 @@ namespace PetGram.Domain.Entities {
         public string Url { get; set; }
 
         public Profile Profile { get; set; }
+
+        public Guid PostId;
+        
+        public Post Post;
     }
 }

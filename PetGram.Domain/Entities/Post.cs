@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -18,8 +17,12 @@ namespace PetGram.Domain.Entities {
 
         public DateTime Date { get; set; }
 
+        public Guid petId;
+        
+        public Pet pet;
+
         public ICollection<Comment> Comments { get; set; }
 
-        public ICollection<Photo> Photos { get; set; }
+        public Photo Photo { get; set; }
     }
 }

@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PetGram.Domain.Entities {
     public class Profile {
@@ -16,6 +13,8 @@ namespace PetGram.Domain.Entities {
         public string Photo { get; set; }
 
         public Pet Pet { get; set; }
+        
+        public Guid PetId { get; set; }
 
         public ICollection<Photo> Photos { get; set; }
 

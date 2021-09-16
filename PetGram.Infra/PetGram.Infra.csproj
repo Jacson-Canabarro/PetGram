@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <Compile Remove="Interfaces\**" />
+    <Compile Remove="Configurations\PostConfiguration.cs" />
   </ItemGroup>
 
   <ItemGroup>
