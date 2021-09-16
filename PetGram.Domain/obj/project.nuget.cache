@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QS5JuKpZ0Smv9a2L8vTIrOJJk9UXr+X38OZrmT3Lu7qOfjJI08VF9SujYPF/43Iohgl1mbPIao3RiqMVECe9kw==",
+  "dgSpecHash": "fsdtwi6b5SFZfdQ9UiSDwdT/Yw4/GTFKqXrP7z57xioZ3NSHuigdPkMylL0Zaj4y4Pt/bfx019ajxXg8TMf4TQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JacsonCanabarro\\pb\\petgram\\PetGram.Domain\\PetGram.Domain.csproj",
+  "projectFilePath": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Domain\\PetGram.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

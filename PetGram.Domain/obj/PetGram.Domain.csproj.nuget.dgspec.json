@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JacsonCanabarro\\pb\\petgram\\PetGram.Domain\\PetGram.Domain.csproj": {}
+    "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Domain\\PetGram.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JacsonCanabarro\\pb\\petgram\\PetGram.Domain\\PetGram.Domain.csproj": {
+    "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Domain\\PetGram.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JacsonCanabarro\\pb\\petgram\\PetGram.Domain\\PetGram.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Domain\\PetGram.Domain.csproj",
         "projectName": "PetGram.Domain",
-        "projectPath": "C:\\Users\\JacsonCanabarro\\pb\\petgram\\PetGram.Domain\\PetGram.Domain.csproj",
+        "projectPath": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Domain\\PetGram.Domain.csproj",
         "packagesPath": "C:\\Users\\JacsonCanabarro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JacsonCanabarro\\pb\\petgram\\PetGram.Domain\\obj\\",
+        "outputPath": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\JacsonCanabarro\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -14,7 +14,7 @@ namespace PetGram.Infra.Repositories
 
         public Pet GetByUserEmailAndPassword(string email, string password)
         {
-            return _ctx.Pets.FirstOrDefault(p => p.Password.Equals(email.ToLower()) && p.Password.Equals(password.ToLower())) ;
+            return _ctx.Pets.FirstOrDefault(p => p.Email.Equals(email.ToLower()) && p.Password.Equals(password.ToLower())) ;
         }
     }
 }
