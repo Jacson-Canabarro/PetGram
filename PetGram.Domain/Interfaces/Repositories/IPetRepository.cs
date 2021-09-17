@@ -2,9 +2,8 @@
 
 namespace PetGram.Domain.Interfaces.Repositories
 {
-    public interface IPetRepository: IBaseRepository<Pet>
+    public interface IPetRepository : IBaseRepository<Pet>
     {
-
         public Pet GetByUserEmailAndPassword(string email, string password);
     }
 }

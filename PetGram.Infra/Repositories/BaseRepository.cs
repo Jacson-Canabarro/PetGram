@@ -6,7 +6,7 @@ using PetGram.Domain.Interfaces;
 
 namespace PetGram.Infra.Repositories
 {
-    public abstract class BaseRepository<T> : IBaseRepository<T> where T : class
+    public class BaseRepository<T> : IBaseRepository<T> where T : class, new()
     {
 
         private readonly PetGramContext _ctx;
@@ -34,10 +34,10 @@ namespace PetGram.Infra.Repositories
 
         }
 
-        public void Save(T entity)
+        public async Task Save(T entity)
         {
-            _ctx.Set<T>().AddAsync(entity);
-            _ctx.SaveChanges();
+           await _ctx.Set<T>().AddAsync(entity);
+           await _ctx.SaveChangesAsync();
         }
 
         public void Update(T entity)

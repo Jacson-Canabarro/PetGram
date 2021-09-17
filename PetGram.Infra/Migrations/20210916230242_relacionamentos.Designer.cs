@@ -10,8 +10,8 @@ using PetGram.Infra.Context;
 namespace PetGram.Infra.Migrations
 {
     [DbContext(typeof(PetGramContext))]
-    [Migration("20210916002559_relationship")]
-    partial class relationship
+    [Migration("20210916230242_relacionamentos")]
+    partial class relacionamentos
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -59,12 +59,12 @@ namespace PetGram.Infra.Migrations
                     b.Property<int>("Like")
                         .HasColumnType("int");
 
-                    b.Property<Guid?>("PostId1")
+                    b.Property<Guid>("PostId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("PostId1");
+                    b.HasIndex("PostId");
 
                     b.ToTable("Comments");
                 });
@@ -93,12 +93,12 @@ namespace PetGram.Infra.Migrations
                     b.Property<string>("Password")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("ProfileId1")
+                    b.Property<Guid?>("ProfileId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProfileId1");
+                    b.HasIndex("ProfileId");
 
                     b.ToTable("Pet");
                 });
@@ -109,6 +109,9 @@ namespace PetGram.Infra.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<Guid>("PostId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<Guid?>("ProfileId")
                         .HasColumnType("uniqueidentifier");
 
@@ -116,6 +119,9 @@ namespace PetGram.Infra.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("PostId")
+                        .IsUnique();
 
                     b.HasIndex("ProfileId");
 
@@ -137,12 +143,12 @@ namespace PetGram.Infra.Migrations
                     b.Property<int>("Like")
                         .HasColumnType("int");
 
-                    b.Property<Guid?>("PhotoId")
+                    b.Property<Guid>("petId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("PhotoId");
+                    b.HasIndex("petId");
 
                     b.ToTable("Post");
                 });
@@ -188,8 +194,9 @@ namespace PetGram.Infra.Migrations
                 {
                     b.HasOne("PetGram.Domain.Entities.Post", "Post")
                         .WithMany("Comments")
-                        .HasForeignKey("PostId1")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("PostId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Post");
                 });
@@ -198,25 +205,35 @@ namespace PetGram.Infra.Migrations
                 {
                     b.HasOne("PetGram.Domain.Entities.Profile", null)
                         .WithMany("Friends")
-                        .HasForeignKey("ProfileId1");
+                        .HasForeignKey("ProfileId");
                 });
 
             modelBuilder.Entity("PetGram.Domain.Entities.Photo", b =>
                 {
+                    b.HasOne("PetGram.Domain.Entities.Post", "Post")
+                        .WithOne("Photo")
+                        .HasForeignKey("PetGram.Domain.Entities.Photo", "PostId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("PetGram.Domain.Entities.Profile", "Profile")
                         .WithMany("Photos")
                         .HasForeignKey("ProfileId");
+
+                    b.Navigation("Post");
 
                     b.Navigation("Profile");
                 });
 
             modelBuilder.Entity("PetGram.Domain.Entities.Post", b =>
                 {
-                    b.HasOne("PetGram.Domain.Entities.Photo", "Photo")
-                        .WithMany()
-                        .HasForeignKey("PhotoId");
+                    b.HasOne("PetGram.Domain.Entities.Pet", "pet")
+                        .WithMany("Posts")
+                        .HasForeignKey("petId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("Photo");
+                    b.Navigation("pet");
                 });
 
             modelBuilder.Entity("PetGram.Domain.Entities.Profile", b =>
@@ -234,12 +251,16 @@ namespace PetGram.Infra.Migrations
                 {
                     b.Navigation("Address");
 
+                    b.Navigation("Posts");
+
                     b.Navigation("Profile");
                 });
 
             modelBuilder.Entity("PetGram.Domain.Entities.Post", b =>
                 {
                     b.Navigation("Comments");
+
+                    b.Navigation("Photo");
                 });
 
             modelBuilder.Entity("PetGram.Domain.Entities.Profile", b =>

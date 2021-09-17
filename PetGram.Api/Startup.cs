@@ -13,6 +13,7 @@ using PetGram.Domain.Interfaces.Services;
 using PetGram.Infra.Context;
 using PetGram.Infra.Repositories;
 using System;
+using PetGram.Domain.Interfaces.Repositories;
 
 namespace PetGram.Api
 {
@@ -32,10 +33,12 @@ namespace PetGram.Api
             services.AddControllers();
             services.AddDbContext<PetGramContext>();
             services.AddScoped<PetGramContext, PetGramContext>();
-            services.AddScoped<PetService, PetService>();
-            services.AddScoped<PetRepository, PetRepository>();
-            services.AddScoped<PostService, PostService>();
-            services.AddScoped<PostRepository, PostRepository>();
+            services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+            services.AddScoped<IPetService, PetService>();
+            services.AddScoped<IPostService, PostService>();
+            services.AddScoped<IPetRepository, PetRepository>();
+            services.AddScoped<IPostRepository, PostRepository>();
+
 
             var key = Encoding.ASCII.GetBytes(Settings.Secret);
             services.AddAuthentication(x =>

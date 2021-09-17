@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using PetGram.Domain.Interfaces.Repositories;
 using PetGram.Domain.Interfaces.Services;
 using PetGram.Infra.Repositories;
 
@@ -11,9 +12,9 @@ namespace PetGram.Application.services
     public class PetService : IPetService
     {
 
-        private readonly PetRepository _ptr;
+        private readonly IPetRepository _ptr;
 
-        public PetService(PetRepository petRepository)
+        public PetService(IPetRepository petRepository)
         {
             _ptr = petRepository;
 
@@ -34,9 +35,9 @@ namespace PetGram.Application.services
             return _ptr.GetAll().ToList();
         }
 
-        public void Save(Pet entity)
+        public async Task Save(Pet entity)
         {
-            _ptr.Save(entity);
+           await _ptr.Save(entity);
         }
 
         public void Update(Pet entity)

@@ -10,8 +10,8 @@ namespace PetGram.Domain.Entities {
 
         public Profile Profile { get; set; }
 
-        public Guid PostId;
+        public Guid PostId { get; set; }
         
-        public Post Post;
+        public Post Post { get; set; }
     }
 }

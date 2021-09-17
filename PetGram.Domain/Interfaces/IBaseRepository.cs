@@ -8,7 +8,7 @@ namespace PetGram.Domain.Interfaces
     {
         Task<T> Get(Guid id);
         IQueryable<T> GetAll();
-        void Save(T entity);
+        Task Save(T entity);
         void Update(T entity);
         void Delete(T id);
 

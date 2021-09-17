@@ -9,7 +9,7 @@ namespace PetGram.Domain.Interfaces.Services
 
         Task<T> Get(Guid id);
         List<T> GetAll();
-        void Save(T entity);
+        Task Save(T entity);
         void Update(T entity);
         void Delete(T id);
     }

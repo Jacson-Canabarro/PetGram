@@ -19,9 +19,9 @@ namespace PetGram.Domain.Entities {
         public string Country { get; set; }
 
         
-        public Guid PetId;
+        public Guid PetId { get; set; }
         
-        public Pet Pet;
+        public Pet Pet { get; set; }
 
     }
 }

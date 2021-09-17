@@ -7,7 +7,7 @@ namespace PetGram.Domain.Entities {
 
     [Table("Post")]
     public class Post {
-
+        
         [Key]
         public Guid Id { get; set; }
 
@@ -17,11 +17,11 @@ namespace PetGram.Domain.Entities {
 
         public DateTime Date { get; set; }
 
-        public Guid petId;
+        public Guid petId { get; set; }
         
-        public Pet pet;
+        public Pet pet { get; set; }
 
-        public ICollection<Comment> Comments { get; set; }
+        public virtual ICollection<Comment> Comments { get; set; }
 
         public Photo Photo { get; set; }
     }

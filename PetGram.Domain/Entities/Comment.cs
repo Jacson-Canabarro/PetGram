@@ -11,8 +11,8 @@ namespace PetGram.Domain.Entities
 
         public int Like { get; set; }
 
-        public Guid PostId;
+        public Guid PostId { get; set; }
         
-        public Post Post;
+        public Post Post { get; set; }
     }
 }

@@ -24,14 +24,12 @@ namespace PetGram.Domain.Entities
         public string Breed { get; set; }
 
         public string Password { get; set; }
-
-        public Guid ProfileId;
         
-        public Profile Profile;
+        public Profile Profile { get; set; }
 
-        public Address Address;
+        public Address Address { get; set; }
 
-        public ICollection<Post> Posts;
+        public virtual  ICollection<Post> Posts { get; set; }
 
     }
 }

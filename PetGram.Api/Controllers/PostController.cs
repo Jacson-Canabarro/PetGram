@@ -1,18 +1,23 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using PetGram.Application.services;
+using PetGram.Api.models;
 using PetGram.Domain.Entities;
+using PetGram.Domain.Interfaces.Services;
 
 namespace PetGram.Api.Controllers
 {
+    [Route("/v1/post")]
+    [ApiController]
     public class PostController : Controller
     {
 
 
-        private readonly PostService _postService;
+        private readonly IPostService _postService;
 
-        public PostController(PostService postService)
+        public PostController(IPostService postService)
         {
             _postService = postService;
         }
@@ -31,9 +36,10 @@ namespace PetGram.Api.Controllers
         
         [HttpPost]
         [Authorize]
-        public void Post([FromBody] Post value)
+        public async Task Post([FromBody] PostCreateDto value)
         {
-            _postService.Save(value);
+            var post = this.mapToPost(value);
+            await _postService.Save(post);
         }
 
  
@@ -42,6 +48,19 @@ namespace PetGram.Api.Controllers
         public void Put([FromBody] Post value)
         {
             _postService.Update(value);
+        }
+
+
+
+        private Post mapToPost(PostCreateDto dto)
+        {
+            return new Post
+            {
+                Description = dto.Description,
+                petId = dto.petId,
+                Date = DateTime.Now,
+                Photo = dto.Photo,
+            };
         }
         
         

@@ -1,3 +1,12 @@
+C:\Users\User\source\repos\PetgramReal\PetGram\PetGram.Domain\bin\Debug\netcoreapp3.1\PetGram.Domain.deps.json
+C:\Users\User\source\repos\PetgramReal\PetGram\PetGram.Domain\bin\Debug\netcoreapp3.1\PetGram.Domain.dll
+C:\Users\User\source\repos\PetgramReal\PetGram\PetGram.Domain\bin\Debug\netcoreapp3.1\PetGram.Domain.pdb
+C:\Users\User\source\repos\PetgramReal\PetGram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\PetgramReal\PetGram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\PetgramReal\PetGram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.AssemblyInfo.cs
+C:\Users\User\source\repos\PetgramReal\PetGram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\PetgramReal\PetGram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.dll
+C:\Users\User\source\repos\PetgramReal\PetGram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.pdb
 C:\Users\JacsonCanabarro\pb\petgram\PetGram.Domain\bin\Debug\netcoreapp3.1\PetGram.Domain.deps.json
 C:\Users\JacsonCanabarro\pb\petgram\PetGram.Domain\bin\Debug\netcoreapp3.1\PetGram.Domain.dll
 C:\Users\JacsonCanabarro\pb\petgram\PetGram.Domain\bin\Debug\netcoreapp3.1\PetGram.Domain.pdb
@@ -8,12 +17,3 @@ C:\Users\JacsonCanabarro\pb\petgram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGr
 C:\Users\JacsonCanabarro\pb\petgram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.csproj.CoreCompileInputs.cache
 C:\Users\JacsonCanabarro\pb\petgram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.dll
 C:\Users\JacsonCanabarro\pb\petgram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.pdb
-C:\Users\User\source\repos\PetgramReal\PetGram\PetGram.Domain\bin\Debug\netcoreapp3.1\PetGram.Domain.deps.json
-C:\Users\User\source\repos\PetgramReal\PetGram\PetGram.Domain\bin\Debug\netcoreapp3.1\PetGram.Domain.dll
-C:\Users\User\source\repos\PetgramReal\PetGram\PetGram.Domain\bin\Debug\netcoreapp3.1\PetGram.Domain.pdb
-C:\Users\User\source\repos\PetgramReal\PetGram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.csproj.AssemblyReference.cache
-C:\Users\User\source\repos\PetgramReal\PetGram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.AssemblyInfoInputs.cache
-C:\Users\User\source\repos\PetgramReal\PetGram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.AssemblyInfo.cs
-C:\Users\User\source\repos\PetgramReal\PetGram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.csproj.CoreCompileInputs.cache
-C:\Users\User\source\repos\PetgramReal\PetGram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.dll
-C:\Users\User\source\repos\PetgramReal\PetGram\PetGram.Domain\obj\Debug\netcoreapp3.1\PetGram.Domain.pdb

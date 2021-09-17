@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using PetGram.Api.models;
 using PetGram.Api.Token;
-using PetGram.Application.services;
+using PetGram.Domain.Interfaces.Services;
 
 namespace PetGram.Api.Controllers
 {
@@ -15,9 +15,9 @@ namespace PetGram.Api.Controllers
     public class PetController : ControllerBase
     {
 
-        private readonly PetService _service;
+        private readonly IPetService _service;
 
-        public PetController(PetService petService)
+        public PetController(IPetService petService)
         {
             _service = petService;
         }
@@ -42,7 +42,6 @@ namespace PetGram.Api.Controllers
             pet.Password = "";
             return new
             {
-                pet = pet,
                 token = token
             };
         }
@@ -58,9 +57,9 @@ namespace PetGram.Api.Controllers
 
         [HttpPost]
         [AllowAnonymous]
-        public void Post([FromBody] Pet value)
+        public async Task Post([FromBody] Pet value)
         {
-            _service.Save(value);
+            await _service.Save(value);
         }
 
  
