@@ -18,9 +18,30 @@ namespace PetGram.Api.Controllers {
             _service = commentService;
         }
 
+        [HttpGet]
+        public List<Comment> Get() {
+            return _service.GetAll();
+        }
+
         [HttpPost]
         public void Post([FromBody] Comment value) {
             _service.Save(value);
         }
+
+        [HttpGet ("{id}")]
+        public async Task<Comment> GetAsync(Guid id) {
+            return await _service.Get(id);
+        }
+
+        [HttpDelete("{id}")]
+        public void Delete(Comment id) {
+            _service.Delete(id);
+        }
+
+        [HttpPut("{id}")]
+        public void Put([FromBody] Comment value) {
+            _service.Update(value);
+        }
+
     }
 }

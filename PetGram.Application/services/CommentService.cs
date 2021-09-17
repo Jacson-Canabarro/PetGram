@@ -21,8 +21,8 @@ namespace PetGram.Application.services {
             _ptr.Delete(id);
         }
 
-        public Task<Comment> Get(Guid id) {
-            throw new NotImplementedException();
+        public async Task<Comment> Get(Guid id) {
+            return await _ptr.Get(id);
         }
 
         public List<Comment> GetAll() {
