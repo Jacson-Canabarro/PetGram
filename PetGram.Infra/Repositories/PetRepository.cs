@@ -15,6 +15,12 @@ namespace PetGram.Infra.Repositories
         }
 
 
+        public IQueryable<Pet> GetAll()
+        {
+            return _ctx.Pets.Include(p => p.Posts);
+        }
+
+
         public Pet GetByUserEmailAndPassword(string email, string password)
         {
             return _ctx.Pets.FirstOrDefault(p => p.Email.Equals(email.ToLower()) && p.Password.Equals(password.ToLower())) ;

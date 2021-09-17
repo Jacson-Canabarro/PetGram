@@ -6,13 +6,14 @@ using PetGram.Domain.Entities;
 using PetGram.Infra.Repositories;
 using PetGram.Domain.Interfaces.Services;
 using System.Threading.Tasks;
+using PetGram.Domain.Interfaces.Repositories;
 
 namespace PetGram.Application.services {
     public class CommentService : ICommentService{
 
-        private readonly CommentRepository _ptr;
+        private readonly ICommentRepository _ptr;
 
-        public CommentService(CommentRepository commentRepository) {
+        public CommentService(ICommentRepository commentRepository) {
             _ptr = commentRepository;
 
         }
@@ -29,8 +30,8 @@ namespace PetGram.Application.services {
             return _ptr.GetAll().ToList();
         }
 
-        public void Save(Comment entity) {
-            _ptr.Save(entity);
+        public async Task Save(Comment entity) {
+           await _ptr.Save(entity);
         }
 
         public void Update(Comment entity) {

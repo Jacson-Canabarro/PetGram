@@ -30,7 +30,8 @@ namespace PetGram.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(options =>
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddDbContext<PetGramContext>();
             services.AddScoped<PetGramContext, PetGramContext>();
             services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
@@ -38,6 +39,9 @@ namespace PetGram.Api
             services.AddScoped<IPostService, PostService>();
             services.AddScoped<IPetRepository, PetRepository>();
             services.AddScoped<IPostRepository, PostRepository>();
+            services.AddScoped<IPostRepository, PostRepository>();
+            services.AddScoped<ICommentService, CommentService>();
+            services.AddScoped<ICommentRepository, CommentRepository>();
 
 
             var key = Encoding.ASCII.GetBytes(Settings.Secret);

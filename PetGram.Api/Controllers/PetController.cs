@@ -63,7 +63,7 @@ namespace PetGram.Api.Controllers
         }
 
  
-        [HttpPut("{id}")]
+        [HttpPut]
         [Authorize]
         public void Put([FromBody] Pet value)
         {
@@ -71,11 +71,11 @@ namespace PetGram.Api.Controllers
         }
 
 
-        [HttpDelete("{id}")]
+        [HttpDelete]
         [Authorize]
-        public void Delete(Pet id)
+        public void Delete([FromBody] Pet value)
         {
-            _service.Delete(id);
+            _service.Delete(value);
         }
     }
 }

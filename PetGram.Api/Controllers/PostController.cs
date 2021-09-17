@@ -13,27 +13,22 @@ namespace PetGram.Api.Controllers
     [ApiController]
     public class PostController : Controller
     {
-
-
         private readonly IPostService _postService;
 
         public PostController(IPostService postService)
         {
             _postService = postService;
         }
-        
-        
-        
+
+
         [HttpGet]
         [Authorize]
         public List<Post> Get()
         {
             return _postService.GetAll();
         }
-        
-        
-        
-        
+
+
         [HttpPost]
         [Authorize]
         public async Task Post([FromBody] PostCreateDto value)
@@ -42,14 +37,20 @@ namespace PetGram.Api.Controllers
             await _postService.Save(post);
         }
 
- 
-        [HttpPut("{id}")]
+
+        [HttpPut]
         [Authorize]
         public void Put([FromBody] Post value)
         {
             _postService.Update(value);
         }
 
+        [HttpDelete]
+        [Authorize]
+        public void Delete([FromBody] Post value)
+        {
+            _postService.Delete(value);
+        }
 
 
         private Post mapToPost(PostCreateDto dto)
@@ -62,8 +63,5 @@ namespace PetGram.Api.Controllers
                 Photo = dto.Photo,
             };
         }
-        
-        
-        
     }
 }
