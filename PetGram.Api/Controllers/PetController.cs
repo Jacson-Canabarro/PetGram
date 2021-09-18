@@ -29,24 +29,7 @@ namespace PetGram.Api.Controllers
             return _service.GetAll();
         }
 
-        [HttpPost]
-        [Route("login")]
-        [AllowAnonymous]
-        public ActionResult<dynamic> Authenticate([FromBody] PetLoginDto value)
-        {
-             var pet =  _service.Login(value.Email, value.Password);
-            if (pet == null)
-                return NotFound(new { message = "Email ou senha inválidos" });
 
-            var token = TokenService.GenerateToken(pet);
-            pet.Password = "";
-            return new
-            {
-                token = token
-            };
-        }
-
-   
         [HttpGet("{id}")]
         [Authorize]
         public async Task<Pet> GetAsync(Guid id)
