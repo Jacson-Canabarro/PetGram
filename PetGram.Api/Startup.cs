@@ -13,6 +13,9 @@ using PetGram.Domain.Interfaces.Services;
 using PetGram.Infra.Context;
 using PetGram.Infra.Repositories;
 using System;
+using System.IO;
+using System.Reflection;
+using Microsoft.OpenApi.Models;
 using PetGram.Domain.Interfaces.Repositories;
 
 namespace PetGram.Api
@@ -43,6 +46,11 @@ namespace PetGram.Api
             services.AddScoped<ICommentService, CommentService>();
             services.AddScoped<ICommentRepository, CommentRepository>();
             services.AddScoped<ImageUpload, ImageUpload>();
+            
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "PetGram Infnet ", Version = "v1", });
+            });
 
 
             var key = Encoding.ASCII.GetBytes(Settings.Secret);
@@ -87,7 +95,16 @@ namespace PetGram.Api
                 endpoints.MapControllers();
             });
 
+
+            app.UseSwagger();
             
+            app.UseSwaggerUI(c =>
+            {
+                c.RoutePrefix = string.Empty;
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+            });
+
+
         }
     }
 }
