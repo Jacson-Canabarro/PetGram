@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QZPkmP3ON+1H7VY8OL4J1YvOFJhGa51Wp0Qh6rvz1YYMZtavVrXzJenC2FNOr/fb8V9Q4hze557YXKu0KKiIqQ==",
+  "dgSpecHash": "LSsi30Af55OTj6QjQAhT+AYlGhYixCH97roW/5V/fURYX6nLG5OX2a62oxBSp+N6P5XlcEddFnQcjPAS86aOhg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Infra\\PetGram.Infra.csproj",
+  "projectFilePath": "C:\\Users\\JacsonCanabarro\\pb\\petgram\\PetGram.Infra\\PetGram.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JacsonCanabarro\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\JacsonCanabarro\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

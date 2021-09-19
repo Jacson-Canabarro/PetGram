@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UEoc55w6hqaYa7YNfip6/OMvDYukpHGA9llOoKUTnk+FFo6tG/6z+wGbUTa/ffuPc0LJPrwV+AI6xOmj36cuwQ==",
+  "dgSpecHash": "vamc7a/gzZyiMqIiFJvWnFJJQVLhfORqnOGZhsZ4D5JfeC9E/g5QYCBBONs/IFHsRrCGKtVr0cppkflUgdRciA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Application\\PetGram.Application.csproj",
+  "projectFilePath": "C:\\Users\\JacsonCanabarro\\pb\\petgram\\PetGram.Application\\PetGram.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JacsonCanabarro\\.nuget\\packages\\azure.core\\1.19.0\\azure.core.1.19.0.nupkg.sha512",
     "C:\\Users\\JacsonCanabarro\\.nuget\\packages\\azure.storage.blobs\\12.10.0\\azure.storage.blobs.12.10.0.nupkg.sha512",
