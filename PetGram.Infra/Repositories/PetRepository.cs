@@ -17,7 +17,9 @@ namespace PetGram.Infra.Repositories
 
         public IQueryable<Pet> GetAll()
         {
-            return _ctx.Pets.Include(p => p.Posts);
+            return _ctx.Pets
+                .Include(p => p.Posts)
+                .ThenInclude(x => x.Comments).AsSplitQuery();
         }
 
 

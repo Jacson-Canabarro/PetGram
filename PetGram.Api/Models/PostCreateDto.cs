@@ -9,6 +9,6 @@ namespace PetGram.Api.models
 
         public Guid petId { get; set; }
         
-        public Photo Photo { get; set; }
+        public string Photo { get; set; }
     }
 }

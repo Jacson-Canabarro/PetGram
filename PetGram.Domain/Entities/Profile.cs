@@ -16,8 +16,6 @@ namespace PetGram.Domain.Entities {
         
         public Guid PetId { get; set; }
 
-        public ICollection<Photo> Photos { get; set; }
-
         public ICollection<Pet> Friends { get; set; }
     }
 }

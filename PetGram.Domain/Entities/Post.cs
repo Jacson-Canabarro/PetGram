@@ -23,6 +23,6 @@ namespace PetGram.Domain.Entities {
 
         public virtual ICollection<Comment> Comments { get; set; }
 
-        public Photo Photo { get; set; }
+        public string Photo { get; set; }
     }
 }

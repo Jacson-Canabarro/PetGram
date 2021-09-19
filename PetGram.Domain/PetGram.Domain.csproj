@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Compile Remove="Interfaces\IBaseService.cs" />
+    <Compile Remove="Entities\Photo.cs" />
   </ItemGroup>
 
 </Project>

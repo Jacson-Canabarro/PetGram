@@ -42,6 +42,7 @@ namespace PetGram.Api
             services.AddScoped<IPostRepository, PostRepository>();
             services.AddScoped<ICommentService, CommentService>();
             services.AddScoped<ICommentRepository, CommentRepository>();
+            services.AddScoped<ImageUpload, ImageUpload>();
 
 
             var key = Encoding.ASCII.GetBytes(Settings.Secret);

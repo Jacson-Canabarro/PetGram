@@ -1,9 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using PetGram.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using PetGram.Infra.Configurations;
 
 namespace PetGram.Infra.Context
@@ -24,8 +21,6 @@ namespace PetGram.Infra.Context
         public virtual DbSet<Comment> Comments { get; set; }
 
         public virtual DbSet<Profile> Profiles { get; set; }
-
-        public virtual DbSet<Photo> Photos { get; set; }
 
         public virtual DbSet<Address> Addresses { get; set; }
 

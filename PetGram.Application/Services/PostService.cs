@@ -13,11 +13,13 @@ namespace PetGram.Application.services
     {
         private readonly IPostRepository _ptr;
         private readonly IPetRepository _petRepository;
+        private readonly ImageUpload _imageUpload;
 
-        public PostService(IPostRepository postRepository, IPetRepository petRepository)
+        public PostService(IPostRepository postRepository, IPetRepository petRepository, ImageUpload imageUpload)
         {
             _ptr = postRepository;
             _petRepository = petRepository;
+            _imageUpload = imageUpload;
         }
 
         public void Delete(Post id)
@@ -39,9 +41,9 @@ namespace PetGram.Application.services
         {
             var pet = await _petRepository.Get(entity.petId);
             entity.pet = pet;
+            var uploadBase64Img = _imageUpload.UploadBase64Img(entity.Photo,"images");
+            entity.Photo = uploadBase64Img;
             await _ptr.Save(entity);
-            pet.Posts.Add(entity);
-            _petRepository.Update(pet);
         }
 
         public void Update(Post entity)
