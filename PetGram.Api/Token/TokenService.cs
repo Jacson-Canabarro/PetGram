@@ -18,7 +18,7 @@ namespace PetGram.Api.Token
             var tokenDescroptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new Claim[] { 
-                    new Claim(ClaimTypes.Name, pet.Email.ToString())
+                    new Claim(ClaimTypes.Name, pet.Id.ToString())
                 }),
                 Expires = DateTime.UtcNow.AddHours(2),
                 SigningCredentials = new SigningCredentials(

@@ -6144,11 +6144,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JacsonCanabarro\\pb\\petgram\\PetGram.Application\\PetGram.Application.csproj",
+      "projectUniqueName": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Application\\PetGram.Application.csproj",
       "projectName": "PetGram.Application",
-      "projectPath": "C:\\Users\\JacsonCanabarro\\pb\\petgram\\PetGram.Application\\PetGram.Application.csproj",
+      "projectPath": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Application\\PetGram.Application.csproj",
       "packagesPath": "C:\\Users\\JacsonCanabarro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JacsonCanabarro\\pb\\petgram\\PetGram.Application\\obj\\",
+      "outputPath": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\JacsonCanabarro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6165,8 +6165,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\JacsonCanabarro\\pb\\petgram\\PetGram.Infra\\PetGram.Infra.csproj": {
-              "projectPath": "C:\\Users\\JacsonCanabarro\\pb\\petgram\\PetGram.Infra\\PetGram.Infra.csproj"
+            "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Infra\\PetGram.Infra.csproj": {
+              "projectPath": "C:\\Users\\JacsonCanabarro\\pb\\PetGram\\PetGram.Infra\\PetGram.Infra.csproj"
             }
           }
         }

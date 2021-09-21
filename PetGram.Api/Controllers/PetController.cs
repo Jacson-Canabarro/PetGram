@@ -2,6 +2,7 @@
 using PetGram.Domain.Entities;
 using System;
 using System.Collections.Generic;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using PetGram.Api.models;
@@ -36,6 +37,26 @@ namespace PetGram.Api.Controllers
         {
             return await _service.Get(id);
         }
+        
+        
+        
+        [HttpGet("logged")]
+        [Authorize]
+        public async Task<Pet> GetAsync()
+        {
+            Pet pet = null ;
+            
+            var claimsIdentity = this.User.Identity as ClaimsIdentity;
+            if (claimsIdentity != null)
+            {
+                var petId = claimsIdentity.FindFirst(ClaimTypes.Name)?.Value;
+               pet = await _service.Get(Guid.Parse(petId));
+            }
+
+            return pet;
+        }
+        
+        
 
 
         [HttpPost]
