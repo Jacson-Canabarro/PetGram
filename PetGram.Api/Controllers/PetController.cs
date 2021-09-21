@@ -35,7 +35,9 @@ namespace PetGram.Api.Controllers
         [Authorize]
         public async Task<Pet> GetAsync(Guid id)
         {
-            return await _service.Get(id);
+            var pet =  await _service.Get(id);
+            pet.Password = "";
+            return pet;
         }
         
         
@@ -51,6 +53,7 @@ namespace PetGram.Api.Controllers
             {
                 var petId = claimsIdentity.FindFirst(ClaimTypes.Name)?.Value;
                pet = await _service.Get(Guid.Parse(petId));
+               pet.Password = "";
             }
 
             return pet;
