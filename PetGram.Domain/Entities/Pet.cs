@@ -27,8 +27,6 @@ namespace PetGram.Domain.Entities
         
         public Profile Profile { get; set; }
 
-        public Address Address { get; set; }
-
         public virtual  ICollection<Post> Posts { get; set; }
 
     }

@@ -22,15 +22,12 @@ namespace PetGram.Infra.Context
 
         public virtual DbSet<Profile> Profiles { get; set; }
 
-        public virtual DbSet<Address> Addresses { get; set; }
-
         protected override void OnConfiguring(DbContextOptionsBuilder options)
                 => options.UseSqlServer(configuration.GetConnectionString("DbConn"));
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
             modelBuilder.ApplyConfiguration(new ProfileConfiguration());
-            modelBuilder.ApplyConfiguration(new AddressConfiguration());
             modelBuilder.ApplyConfiguration(new CommentConfiguration());
             modelBuilder.ApplyConfiguration(new PostConfifuration());
         }

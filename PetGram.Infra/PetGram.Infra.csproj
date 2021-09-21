@@ -25,6 +25,7 @@
   <ItemGroup>
     <Compile Remove="Interfaces\**" />
     <Compile Remove="Configurations\PostConfiguration.cs" />
+    <Compile Remove="Configurations\AddressConfiguration.cs" />
   </ItemGroup>
 
   <ItemGroup>
