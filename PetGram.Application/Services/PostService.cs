@@ -46,7 +46,7 @@ namespace PetGram.Application.services
             await _ptr.Save(entity);
         }
 
-        public void Update(Post entity)
+        public async void Update(Post entity)
         {
             _ptr.Update(entity);
         }

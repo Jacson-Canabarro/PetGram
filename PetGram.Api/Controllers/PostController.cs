@@ -22,7 +22,7 @@ namespace PetGram.Api.Controllers
 
 
         [HttpGet]
-        [Authorize]
+        [AllowAnonymous]
         public List<Post> Get()
         {
             return _postService.GetAll();
